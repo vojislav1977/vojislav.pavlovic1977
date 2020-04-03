@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var x = prompt ("Unesite prvi broj" );
+    var znak = prompt ("Unesite matematicku operaciju" );
+    var y = prompt ("Unesite drugi broj" );
+
+        switch (sign){
+            case "+":
+            var sum = parseInt(x)+parseInt(y);
+            break;
+            case "-":
+            var sum = parseInt(x)-parseInt(y);
+            break;
+            case "*" :
+            var sum = parseInt(x)*parseInt(y);
+            break;
+            case "/" :
+            var sum = parseInt(x)/parseInt(y);
+            break;
+            default:
+            alert("Unknown value");
+            break;
+        }
+        alert (sum);
+    </script>
+</body>
+</html>
