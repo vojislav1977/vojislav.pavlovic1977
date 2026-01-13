@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator v.1</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var x = prompt ("Unesite prvi broj" );
+    var znak = prompt ("Unesite matematicku operaciju" );
+    var y = prompt ("Unesite drugi broj" );
+
+if (znak ===  ('+')){
+    var y = parseint(x)+parseint(y);
+    alert ('Resultat je: '+ y);
+}
+else if ( znak ===('-')){
+    var y = parseint(x)-parseint(y);
+    alert ('Resultat je: '+ y);
+}
+else if ( znak ===('*')){
+    var y = parseint(x)*parseint(y);
+    alert ('Resultat je: '+ y);
+}
+else if ( znak ===('/')){
+    if (y ==0){
+        throw Error('Deljenje sa NULOM nije dozvoljeno')
+    }
+    else {
+    var y = parseint(x)/parseint(y);
+    alert ('Resultat je: '+ y.toFixed(3));        
+    }
+}
+    </script>
+</body>
+</html>
